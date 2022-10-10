@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+    <style>
+        fieldset {
+            text-align: left;
+        }
+        legend {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Форма заказа худи</h1>
+    <!--
+        Имя
+        Город
+        Почтовый адрес
+        Количество товара
+        Кнопка
+    -->
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td><label for="inp1">Введите ваше имя</label></td>
+                <td>
+<!--                    <input id="inp1" type="text" required name="user" placeholder="Никита">-->
+                    <input id="inp1" type="text" name="user" placeholder="Никита">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="inp2">Введите ваш город</label></td>
+                <td>
+<!--                    <input id="inp2" type="text" name="city" value="Иваново" placeholder="Москва">-->
+                    <select name="city" id="inp2">
+                        <option>Иваново</option>
+                        <option>Кострома</option>
+                        <option>Люберцы</option>
+                        <option>Биробиджан</option>
+                        <option selected>Ереван</option>
+                    </select>
+                </td>
+            </tr>
+<!--            tr>td+td>select>option*3-->
+            <tr>
+                <td>Желаемое время доставки</td>
+                <td><select name="delivery">
+                    <optgroup label="Бесплатная доставка">
+                        <option value="утро">8:00-12:00</option>
+                        <option value="день">12:00-16:00</option>
+                        <option value="вечер">16:00-21:00</option>
+                    </optgroup>
+                    <optgroup label="Спец доставка">
+                        <option value="ночь">21:00-8:00</option>
+                    </optgroup>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Адрес электронной почты</td>
+                <td><input type="email" name="email" placeholder="nik@city.ru"></td>
+                <!-- required - обязательно -->
+            </tr>
+            <tr>
+                <td>Сколько будет худи</td>
+                <td><input type="number" name="count" value="1" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+<!--                    <input type="button" value="Просто кнопочка">-->
+<!--                    <input type="reset" value="Отмена">-->
+<!--                    <input type="submit" value="Заказть худи">-->
+                    <button type="button">Просто кнопочка</button>
+                    <button type="reset">Отмена</button>
+                    <button type="submit">Заказать худи</button>
+                </td>
+            </tr>
+        </table>
+<!--        <input type="tel" name="tel">-->
+<!--        <input type="date" name="date">-->
+<!--        <input type="range" min="1" max="5" value="2" name="quantity">-->
+<!--        <input type="password">-->
+<!--        <input type="month">-->
+<!--        <input type="color" name="color" value="#ff0000">-->
+        <fieldset>
+            <legend>Выберите размер худи</legend>
+            <div><label><input type="radio" name="size" value="M"> M</label></div>
+            <div><label><input type="radio" name="size" value="XL"> XL</label></div>
+            <div><label><input type="radio" name="size" value="XXL" checked> XXL</label></div>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите цвет</legend>
+            <div><label><input type="radio" name="color" value="Белый" checked> Белый</label></div>
+            <div><label><input type="radio" name="color" value="Бирюзовый"> Бирюзовый</label></div>
+            <div><label><input type="radio" name="color" value="Теракотовый"> Теракотовый</label></div>
+            <div><label><input type="radio" name="color" value="Красный"> Красный</label></div>
+            <div><label><input type="radio" name="color" value="Черный"> Черный</label></div>
+        </fieldset>
+        <fieldset>
+            <legend>Доп опции</legend>
+            <div><label><input type="checkbox" name="opt1" value="Добавить принт"> Добавить принт</label></div>
+            <div><label><input type="checkbox" name="opt2" value="Приложить маску для лица"> Приложить маску для лица</label></div>
+            <div><label><input type="checkbox" name="opt3" value="Нанести тай-дай"> Нанести тай-дай</label></div>
+            <div><label><input type="checkbox" name="opt4" value="Без капюшона"> Без капюшона</label></div>
+            <div><label><input type="checkbox" name="opt5" value="Добавить штанишки" checked> Добавить штанишки</label></div>
+        </fieldset>
+        <div>Комментарий к заказу</div>
+        <textarea name="message" placeholder="Напишите нам что-нибудь" cols="50" rows="10"></textarea>
+    </form>
+</body>
+</html>

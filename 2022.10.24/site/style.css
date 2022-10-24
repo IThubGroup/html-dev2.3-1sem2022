@@ -1,0 +1,18 @@
+body {
+    background: forestgreen;
+    font-family: sans-serif;
+    color: white;
+}
+nav {
+    text-align: right;
+}
+a {
+    color: yellow;
+    font-family: "Courier New", monospace;
+    font-size: 24px;
+}
+h1 {
+    text-align: center;
+    color: magenta;
+    font-size: 50px;
+}

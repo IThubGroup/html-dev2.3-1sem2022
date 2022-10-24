@@ -1,0 +1,27 @@
+.box {
+    background-color: bisque;
+    width: 200px;
+    /*height: 200px;*/
+    font-family: sans-serif;
+    text-align: justify;
+    /*overflow: auto; /* visible / hidden / scroll */
+    min-height: 200px;
+    /*max-height: 250px;*/
+    border-width: 10px;
+    /*border-color: crimson;*/
+    border-style: solid; /* none / solid / dotted / dashed double */
+    border: 5px solid crimson;
+    border-bottom: 5px solid lime;
+    border-right-style: dashed;
+    padding: 20px;
+    padding: 20px 0 50px 100px; /*top right bottom left */
+    padding: 50px 100px; /* y x */
+    padding: 20px 50px 100px; /* top x bottom */
+    margin: 50px auto 20px;
+}
+.dark {
+    background-color: #777;
+}
+.badboy {
+    border: 1px solid transparent;
+}

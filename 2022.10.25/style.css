@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+a {
+    color: inherit; /* унаследованный */
+    text-decoration: none; /* line-through / overline / underline / none*/
+}
+nav {
+    background: dimgrey;
+    height: 200px;
+}
+.menu {
+    width: 800px;
+    height: 50%;
+    background-color: darkslateblue;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* направление оси */
+    /* row / column / row-reverse / row-reverse*/
+    align-items: center; /* stretch / flex-start / flex-end / center */
+    justify-content: space-between; /* flex-start / flex-end / center / space-around / space-between */
+}
+.link {
+    padding: 0 6px;
+    background: #000;
+    border: 1px solid;
+    text-align: center;
+    line-height: 30px;
+}
